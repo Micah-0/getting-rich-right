@@ -1,0 +1,96 @@
+:root {
+    --primary-blue: #0074d9;
+    --secondary-blue: #01849b;
+    --background: #f8f9fa;
+    --table-bg: #fff;
+    --table-border: #ddd;
+    --tfoot-bg: #e2e3e5;
+    --input-underline: #bbb;
+    --input-placeholder: #bbb;
+    --tbody-even-bg: #f2f2f2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    margin: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    background: var(--table-bg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;
+}
+
+table:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    font-size: 0.9rem;
+    border: 1px solid var(--table-border);
+    padding: 2px 12px;
+    text-align: left;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+th:hover {
+    box-shadow: inset 0 0 8px rgb(175, 190, 207);
+}
+
+td:hover {
+    box-shadow: inset 0 0 8px rgb(0, 94, 217, 0.2);
+}
+
+thead th {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: var(--primary-blue);
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+tbody th {
+    background: var(--secondary-blue);
+    color: #fff;
+    font-size: 1.1em;
+}
+
+tfoot td {
+    font-weight: bold;
+    background: var(--tfoot-bg);
+    padding: 20px;
+}
+
+tbody tr:nth-child(even) {
+    background: var(--tbody-even-bg);
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--input-underline);
+    background: transparent;
+    padding: 6px 4px;
+    font-size: 1em;
+    width: 90%;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:hover {
+    /* border-color: var(--primary-blue); */
+    background-color: rgba(62, 165, 255, 0.1);
+}
+
+input:focus {
+    border-color: var(--primary-blue);
+}
+
+input::placeholder {
+    color: var(--input-placeholder);
+    font-style: italic;
+}
