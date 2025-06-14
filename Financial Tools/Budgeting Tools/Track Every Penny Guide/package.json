@@ -1,0 +1,7 @@
+{
+  "name": "track-every-penny-guide",
+  "version": "1.0.0",
+  "description": "Track every penny for a week.",
+  "type": "commonjs",
+  "main": "index.js"
+}
