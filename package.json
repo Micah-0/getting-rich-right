@@ -1,6 +1,7 @@
 {
   "name": "getting-rich-right",
   "version": "1.0.0",
+  "type": "module",
   "description": "Professional financial management app to help people make the most of what God has given them",
   "main": "index.js",
   "scripts": {
